@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+
+  <section>
+    <div class="ogo">
+      <h1>King</h1>
+    </div>
+    <div class="header">
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="categories.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          categories
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="#">Fiction</a></li>
+          <li><a class="dropdown-item" href="#">Dystopian</a></li>
+          <li><a class="dropdown-item" href="#">Classic</a></li>
+          <li><a class="dropdown-item" href="#">Science Fiction</a></li>
+          <li><a class="dropdown-item" href="#">Fantasy</a></li>
+          <li><a class="dropdown-item" href="#">Mystery</a></li>
+          <li><a class="dropdown-item" href="#">Historical Fiction</a></li>
+          <li><a class="dropdown-item" href="#">Gothic</a></li>
+          <li><a class="dropdown-item" href="#">Horror</a></li>
+          <li><a class="dropdown-item" href="#">Psychological</a></li>
+          <li><a class="dropdown-item" href="#">Philosophical</a></li>
+          <li><a class="dropdown-item" href="#">Contemporary</a></li>
+          <li><a class="dropdown-item" href="#">Adventure</a></li>
+          <li><a class="dropdown-item" href="#">Autobiographical</a></li>
+          
+          
+          
+          
+        </ul>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="cart.html">cart</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">contact</a>
+      </li>
+    </ul>
+  </div>
+  </section><hr>
+
+
+
+
+  
+  
+  <div style="background-color: aquamarine; margin-left: 4%;" class="container mt-5">
+    <h2>Payment Receipt</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Book Title</th>
+          <th scope="col">Price</th>
+          <th scope="col">Quantity</th>
+          <th scope="col">Total</th>
+          <th scope="col">Actions</th>
+        </tr>
+      </thead>
+      <tbody id="cartTableBody">
+        <!-- Cart details will be dynamically added here -->
+      </tbody>
+    </table>
+    <p>Total Amount: $<span id="totalAmount">0.00</span></p>
+    
+  </div>
+
+
+  <div  class="container mt-5">
+    
+
+    <div class="mt-3">
+      
+      <a style="margin: 50%;" href="payment.html"> 
+      <button  class="btn btn-danger" id="proceedToPayment">Proceed to Payment</button></a>
+
+      
+    </div>
+
+    <div class="mt-3">
+      
+      <a style="margin: 140%;" href="index.html"> 
+      <button  class="btn btn-danger" id="proceedToPayment">Home</button></a>
+
+      
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- card.html -->
+
+
+<script src="script.js"></script>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="your-cart-script.js"></script>
+</body>
+</html>

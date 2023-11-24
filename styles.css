@@ -1,0 +1,52 @@
+.ogo {
+  background-color: rgb(236, 228, 228);
+  height: 50px;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  text-shadow: 2px;
+}
+
+.header {
+  background-color: rgb(231, 104, 104);
+  height: 50px;
+  color: aliceblue;
+}
+.header .nav {
+  color: aliceblue;
+  font-size: x-large;
+  -webkit-text-decoration: double;
+          text-decoration: double;
+}
+@media screen and (max-width: 767px) {
+  .header .nav {
+    font-size: medium;
+  }
+}
+
+.card {
+  width: 100%;
+  margin: 1%;
+  float: left;
+}
+
+.container {
+  margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.container .card {
+  flex: 1 0 calc(25% - 30px);
+  margin: 0 15px 15px;
+}
+@media (max-width: 767px) {
+  .container .card {
+    flex: 1 0 calc(50% - 30px);
+  }
+}
+@media (max-width: 480px) {
+  .container .card {
+    flex: 1 0 100%;
+  }
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,83 @@
+
+// Common styles
+.ogo {
+  background-color: rgb(236, 228, 228);
+  height: 50px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  text-shadow: 2px;
+}
+
+.header {
+  background-color: rgb(231, 104, 104);
+  height: 50px;
+  color: aliceblue;
+
+  .nav {
+    color: aliceblue;
+    font-size: x-large;
+    text-decoration: double;
+  }
+
+  // Media query for small screens
+  @media screen and (max-width: 767px) {
+    .nav {
+      font-size: medium; // Adjust font size for smaller screens
+    }
+  }
+}
+
+
+
+
+
+// Add this SCSS to your styles.scss file
+
+.card {
+  width: 100%; // Set the width as per your preference
+  margin: 1%; // Adjust the margin as needed
+  float: left;
+}
+
+// Define the number of cards per row
+$cards-per-row: 4;
+
+// Container styling
+.container {
+  margin-top: 5rem;
+
+  // Use Flexbox for layout
+  display: flex;
+  flex-wrap: wrap;
+
+  // Adjust margin between cards
+  margin-right: -15px;
+  margin-left: -15px;
+
+  // For each card, set width to distribute them evenly
+  .card {
+    flex: 1 0 calc(25% - 30px); // 25% width, deducting margin
+
+    // Add margin between cards
+    margin: 0 15px 15px;
+  }
+
+  // Media query for smaller screens
+  @media (max-width: 767px) {
+    .card {
+      flex: 1 0 calc(50% - 30px); // 50% width on smaller screens
+    }
+  }
+
+  // Media query for even smaller screens
+  @media (max-width: 480px) {
+    .card {
+      flex: 1 0 100%; // 100% width on very small screens
+    }
+  }
+}
+
+
+
+
+
